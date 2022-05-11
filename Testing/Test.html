@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Connecting Events Using HTML Atrributes</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p ondblclick="handle(event)">Paragraph</p>
+        <h1 onclick="handle(event)">Heading 1</h1>
+        <span onmouseover="handle(event)">Special Text</span>
+
+        <script>
+            function handle(e)  {
+                if (e.type == "mouseover")  {
+                    alert("You moved over the Special Text");
+                } else  {
+                    alert(e.type);
+                }
+            }
+        </script>
+    </body>
+</html>
